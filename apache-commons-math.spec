@@ -3,7 +3,7 @@
 
 Name:             apache-%{short_name}
 Version:          2.2
-Release:          1
+Release:          2
 Summary:          Java library of lightweight mathematics and statistics components
 
 Group:            Development/Java
