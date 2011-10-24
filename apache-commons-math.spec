@@ -3,7 +3,7 @@
 
 Name:             apache-%{short_name}
 Version:          2.2
-Release:          2
+Release:          1
 Summary:          Java library of lightweight mathematics and statistics components
 
 Group:            Development/Java
@@ -14,7 +14,7 @@ Patch0:           %{name}-2.2-remove_clirr_from_pom.patch
 BuildRoot:        %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:    java-devel >= 0:1.6.0
-BuildRequires:    jpackage-utils >= 0:1.7.5
+BuildRequires:    jpackage-utils
 BuildRequires:    junit4
 BuildRequires:    maven2 >= 2.2.1
 BuildRequires:    maven-antrun-plugin
@@ -30,9 +30,9 @@ BuildRequires:    maven-resources-plugin
 BuildRequires:    maven-surefire-maven-plugin
 BuildRequires:    maven-surefire-provider-junit4
 Requires:         java >= 0:1.6.0
-Requires:         jpackage-utils >= 0:1.7.5
-Requires(post):   jpackage-utils >= 0:1.7.5
-Requires(postun): jpackage-utils >= 0:1.7.5
+Requires:         jpackage-utils
+Requires(post):   jpackage-utils
+Requires(postun): jpackage-utils
 BuildArch:        noarch
 
 %description
@@ -44,7 +44,7 @@ Java programming language or Commons Lang.
 %package javadoc
 Summary:          Javadoc for %{name}
 Group:            Development/Java
-Requires:         jpackage-utils >= 0:1.7.5
+Requires:         jpackage-utils
 
 %description javadoc
 This package contains the API documentation for %{name}.
