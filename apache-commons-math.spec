@@ -8,7 +8,7 @@ Summary:          Java library of lightweight mathematics and statistics compone
 
 Group:            Development/Java
 License:          ASL 1.1 and ASL 2.0 and BSD
-URL:              http://commons.apache.org/%{base_name}/
+URL:              https://commons.apache.org/%{base_name}/
 Source0:          http://www.apache.org/dist/commons/%{base_name}/source/%{short_name}-%{version}-src.tar.gz
 Patch0:           %{name}-2.2-remove_clirr_from_pom.patch
 BuildRoot:        %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
